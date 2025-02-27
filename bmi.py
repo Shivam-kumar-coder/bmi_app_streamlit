@@ -1,7 +1,7 @@
 import streamlit as st
 try:
     def  bmi_c():
-        y=st.text_input("choose your hegiht type : (cm , m , feet)  ")
+        y=st.text_input("choose your height unit   (cm , m , feet) ")
         h=st.number_input("enter your height ")
         if y=="cm":
             h1=h/100
@@ -22,7 +22,7 @@ try:
             bmi= w/y2**2
         
    
-        st.write(f"your bmi is fitness = {bmi}")
+        st.write(f"your bmi is fitness = {bmi: .2f}")
         if bmi<18.5:
             st.info("underweight")
         elif bmi>=18.5 and bmi<25:
