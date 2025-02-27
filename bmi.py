@@ -9,7 +9,7 @@ try:
          y1=y
         elif y=="feet":
          y2=h*0.304
-        w=st.number_input("inter your weight in kg")
+        w=st.number_input("enter your weight in kg")
         if y=="cm":
             h1=h/100
             bmi= w/h1**2
