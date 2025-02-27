@@ -1,7 +1,7 @@
 import streamlit as st
 try:
     def  bmi_c():
-        y=st.text_input("choose your hegiht type : (cm , m , feet) = ")
+        y=st.text_input("choose your hegiht type : (cm , m , feet)  ")
         h=st.number_input("enter your height ")
         if y=="cm":
             h1=h/100
